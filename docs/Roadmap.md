@@ -100,11 +100,11 @@ Develop a Java-based application to automate the conversion of scientific produc
 
 ## Gantt Chart Representation
 
-### Sprint Delivery Dates: September 2025
+![Project Gantt Chart](ProjectGantt.html)
 
-| Sprint         | Delivery Date |
-|----------------|--------------|
-| First Sprint   | Sep 17, 2025 |
-| Second Sprint  | Sep 21, 2025 |
-| Third Sprint   | Sep 25, 2025 |
-| Final Delivery | Sep 28, 2025 |
+The Gantt chart shows:
+- Sprint milestones: Sep 17, Sep 21, Sep 25, Sep 28
+- Task scheduling aligned with delivery dates
+- Color-coded project phases
+- Clear timeline visualization for meeting deadlines
+
