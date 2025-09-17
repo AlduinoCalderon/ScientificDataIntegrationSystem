@@ -16,31 +16,60 @@ Develop a Java-based application to automate the conversion of scientific produc
 
 ## Timeline and Deliverables
 
-### Project Schedule: September 16–28, 2025
+### Project Stages and Schedule: September 16–28, 2025
 
-| Date         | Milestone/Deliverable                                              |
-|--------------|--------------------------------------------------------------------|
-| Sep 16       | Repository setup, initial documentation, SCRUM methodology         |
-| Sep 17       | Product backlog creation, research on file formats and libraries   |
-| Sep 18–19    | Project structure setup, finalize documentation                   |
-| Sep 20–21    | JSON file reading and parsing implementation, unit tests          |
-| Sep 22–23    | Data transformation framework, mapping logic                      |
-| Sep 24–25    | CSV file generation, unit tests                                   |
-| Sep 26       | Configuration system, batch processing                            |
-| Sep 27       | Performance optimization, error handling improvements             |
-| Sep 28       | Complete JavaDoc documentation, final testing, bug fixes, delivery|
+1. **Research & Documentation** (Sep 16–18)
+   - Research JSON/CSV formats, SCRUM methodology, and libraries
+   - Document findings and create initial project documentation
+   - Deliverables: Research report, README, SCRUM_Concepts.md, File_Formats.md, Backlog.md, Roadmap.md
 
-**Deliverables:**
-- Complete project documentation
-- Research report on appropriate libraries
-- Project backlog and roadmap
-- Working prototype with basic JSON to CSV conversion
-- Unit test suite for core functionality
-- Technical documentation of implemented features
-- Complete application with all features
-- Comprehensive documentation including JavaDoc
-- User guide and examples
-- Final test reports
+2. **Code Development** (Sep 19–24)
+   - Develop core solution: JSON reading/parsing, transformation, CSV generation
+   - Implement configuration and batch processing
+   - Deliverables: Java classes, unit tests, working prototype
+
+3. **Documentation** (Sep 25–27)
+   - Complete JavaDoc, technical documentation, user guide, architecture diagrams
+   - Deliverables: JavaDoc, user guide, UML diagrams
+
+4. **Final Presentation** (Sep 28)
+   - Prepare and record final presentation video
+   - Deliverables: Presentation video, final test reports
+
+### HTML Gantt Chart
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <tr>
+    <th>Stage</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th>Deliverables</th>
+  </tr>
+  <tr>
+    <td>Research & Documentation</td>
+    <td>Sep 16</td>
+    <td>Sep 18</td>
+    <td>Research report, README, SCRUM_Concepts.md, File_Formats.md, Backlog.md, Roadmap.md</td>
+  </tr>
+  <tr>
+    <td>Code Development</td>
+    <td>Sep 19</td>
+    <td>Sep 24</td>
+    <td>Java classes, unit tests, working prototype</td>
+  </tr>
+  <tr>
+    <td>Documentation</td>
+    <td>Sep 25</td>
+    <td>Sep 27</td>
+    <td>JavaDoc, user guide, UML diagrams</td>
+  </tr>
+  <tr>
+    <td>Final Presentation</td>
+    <td>Sep 28</td>
+    <td>Sep 28</td>
+    <td>Presentation video, final test reports</td>
+  </tr>
+</table>
 
 ## Key Stakeholders and Roles
 - **Beatriz Solórzano:** Developer
