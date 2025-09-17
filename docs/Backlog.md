@@ -99,16 +99,38 @@
 | US6 | Batch processing capabilities for multiple files with progress reporting |
 | US7 | Comprehensive code documentation with JavaDoc and architecture explanations |
 
-## Requirements Tracking Table 2: Prioritized Requirements
 
-### Project Schedule: September 16–28, 2025
+## Project Gantt Chart (HTML)
 
-| Requirements                                      | Date(s)      | Deliverables                                                        |
-|---------------------------------------------------|--------------|---------------------------------------------------------------------|
-| Repository creation and documentation             | Sep 16–19    | GitHub repository with README, SCRUM_Concepts.md, File_Formats.md, Backlog.md, and Roadmap.md |
-| Java application for reading/parsing JSON files   | Sep 20–21    | Java classes for JSON file reading and parsing with unit tests      |
-| Data transformation framework                     | Sep 22–23    | Transformation framework classes with unit tests                    |
-| CSV file generation functionality                 | Sep 24–25    | CSV generation classes with unit tests                              |
-| Configuration system                              | Sep 26       | Configuration classes and documentation                             |
-| Batch processing capabilities                     | Sep 27       | Batch processing implementation with progress reporting             |
-| Comprehensive code documentation                  | Sep 28       | Complete JavaDoc documentation and architecture diagrams            |
+<table border="1" cellpadding="4" cellspacing="0">
+	<tr>
+		<th>Stage</th>
+		<th>Start Date</th>
+		<th>End Date</th>
+		<th>Deliverables</th>
+	</tr>
+	<tr>
+		<td>Research & Documentation</td>
+		<td>Sep 16</td>
+		<td>Sep 18</td>
+		<td>Research report, README, SCRUM_Concepts.md, File_Formats.md, Backlog.md, Roadmap.md</td>
+	</tr>
+	<tr>
+		<td>Code Development</td>
+		<td>Sep 19</td>
+		<td>Sep 24</td>
+		<td>Java classes, unit tests, working prototype</td>
+	</tr>
+	<tr>
+		<td>Documentation</td>
+		<td>Sep 25</td>
+		<td>Sep 27</td>
+		<td>JavaDoc, user guide, UML diagrams</td>
+	</tr>
+	<tr>
+		<td>Final Presentation</td>
+		<td>Sep 28</td>
+		<td>Sep 28</td>
+		<td>Presentation video, final test reports</td>
+	</tr>
+</table>
