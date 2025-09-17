@@ -99,38 +99,14 @@
 | US6 | Batch processing capabilities for multiple files with progress reporting |
 | US7 | Comprehensive code documentation with JavaDoc and architecture explanations |
 
+## Requirements Tracking Table 2: Prioritized Requirements
 
-## Project Gantt Chart (HTML)
-
-<table border="1" cellpadding="4" cellspacing="0">
-	<tr>
-		<th>Stage</th>
-		<th>Start Date</th>
-		<th>End Date</th>
-		<th>Deliverables</th>
-	</tr>
-	<tr>
-		<td>Research & Documentation</td>
-		<td>Sep 16</td>
-		<td>Sep 18</td>
-		<td>Research report, README, SCRUM_Concepts.md, File_Formats.md, Backlog.md, Roadmap.md</td>
-	</tr>
-	<tr>
-		<td>Code Development</td>
-		<td>Sep 19</td>
-		<td>Sep 24</td>
-		<td>Java classes, unit tests, working prototype</td>
-	</tr>
-	<tr>
-		<td>Documentation</td>
-		<td>Sep 25</td>
-		<td>Sep 27</td>
-		<td>JavaDoc, user guide, UML diagrams</td>
-	</tr>
-	<tr>
-		<td>Final Presentation</td>
-		<td>Sep 28</td>
-		<td>Sep 28</td>
-		<td>Presentation video, final test reports</td>
-	</tr>
-</table>
+| Requirements | Stages | Time Estimation | Deliverables |
+|--------------|--------|-----------------|--------------|
+| Repository creation and documentation | 1 | 1-2 days | GitHub repository with README, SCRUM_Concepts.md, File_Formats.md, Backlog.md, and Roadmap.md |
+| Java application for reading/parsing JSON files | 2 | 3-4 days | Java classes for JSON file reading and parsing with unit tests |
+| Data transformation framework | 2 | 3-4 days | Transformation framework classes with unit tests |
+| CSV file generation functionality | 2 | 1-2 days | CSV generation classes with unit tests |
+| Configuration system | 3 | 1-2 days | Configuration classes and documentation |
+| Batch processing capabilities | 3 | 1-2 days | Batch processing implementation with progress reporting |
+| Comprehensive code documentation | 3 | 1-2 days | Complete JavaDoc documentation and architecture diagrams |

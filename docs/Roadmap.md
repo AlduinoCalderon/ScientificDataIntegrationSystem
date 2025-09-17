@@ -104,7 +104,7 @@ Develop a Java-based application to automate the conversion of scientific produc
 
 | Sprint         | Delivery Date |
 |----------------|--------------|
-| First Sprint   | Sep 19, 2025 |
-| Second Sprint  | Sep 23, 2025 |
-| Third Sprint   | Sep 26, 2025 |
+| First Sprint   | Sep 17, 2025 |
+| Second Sprint  | Sep 21, 2025 |
+| Third Sprint   | Sep 25, 2025 |
 | Final Delivery | Sep 28, 2025 |

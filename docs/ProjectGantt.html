@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Gantt Chart - Scientific Data Integration System</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; }
+    h1 { color: #2c3e50; }
+    table { border-collapse: collapse; width: 100%; margin-top: 1em; }
+    th, td { border: 1px solid #888; padding: 8px 12px; text-align: left; }
+    th { background: #2980b9; color: #fff; }
+    tr:nth-child(even) { background: #f2f2f2; }
+    .stage { font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Project Gantt Chart</h1>
+  <h2>Scientific Data Integration System</h2>
+  <div class="gantt-container" style="position: relative; height: 380px;">
+    <svg class="gantt-svg" width="1000" height="360">
+      <!-- Timeline axis (top) -->
+      <line x1="150" y1="50" x2="950" y2="50" stroke="#333" stroke-width="3" />
+      <!-- Date labels and milestone markers -->
+      <text x="180" y="35" class="gantt-axis" font-weight="bold">Sep 17</text>
+      <text x="380" y="35" class="gantt-axis" font-weight="bold">Sep 21</text>
+      <text x="680" y="35" class="gantt-axis" font-weight="bold">Sep 25</text>
+      <text x="930" y="35" class="gantt-axis" font-weight="bold">Sep 28</text>
+      
+      <!-- Sprint milestone markers -->
+      <circle cx="180" cy="50" r="8" fill="#e74c3c" />
+      <circle cx="380" cy="50" r="8" fill="#e74c3c" />
+      <circle cx="680" cy="50" r="8" fill="#e74c3c" />
+      <circle cx="930" cy="50" r="8" fill="#e74c3c" />
+      
+      <!-- Sprint vertical guides -->
+      <line x1="180" y1="58" x2="180" y2="340" stroke="#ddd" stroke-width="1" stroke-dasharray="2,2" />
+      <line x1="380" y1="58" x2="380" y2="340" stroke="#ddd" stroke-width="1" stroke-dasharray="2,2" />
+      <line x1="680" y1="58" x2="680" y2="340" stroke="#ddd" stroke-width="1" stroke-dasharray="2,2" />
+      <line x1="930" y1="58" x2="930" y2="340" stroke="#ddd" stroke-width="1" stroke-dasharray="2,2" />
+      
+      <!-- Task bars with proper scheduling -->
+      <!-- Phase 1: Documentation & Setup (Sep 16-17) -->
+      <text x="10" y="95" font-size="15" font-weight="bold">Documentation & Setup</text>
+      <rect x="150" y="80" width="30" height="30" fill="#3498db" rx="4" />
+      <text x="155" y="100" fill="#fff" font-size="12">Setup</text>
+      
+      <!-- Phase 2: JSON Parsing (Sep 17-21) -->
+      <text x="10" y="135" font-size="15" font-weight="bold">JSON Parsing</text>
+      <rect x="180" y="120" width="200" height="30" fill="#27ae60" rx="4" />
+      <text x="190" y="140" fill="#fff" font-size="12">JSON Reading & Parsing</text>
+      
+      <!-- Phase 3: Data Transformation (Sep 21-25) -->
+      <text x="10" y="175" font-size="15" font-weight="bold">Data Transformation</text>
+      <rect x="380" y="160" width="300" height="30" fill="#f39c12" rx="4" />
+      <text x="390" y="180" fill="#fff" font-size="12">Transform JSON to CSV Format</text>
+      
+      <!-- Phase 4: CSV Generation (Sep 25-26) -->
+      <text x="10" y="215" font-size="15" font-weight="bold">CSV Generation</text>
+      <rect x="680" y="200" width="100" height="30" fill="#9b59b6" rx="4" />
+      <text x="690" y="220" fill="#fff" font-size="12">CSV Output</text>
+      
+      <!-- Phase 5: Configuration & Batch (Sep 26-27) -->
+      <text x="10" y="255" font-size="15" font-weight="bold">Configuration System</text>
+      <rect x="780" y="240" width="100" height="30" fill="#e67e22" rx="4" />
+      <text x="790" y="260" fill="#fff" font-size="12">Config</text>
+      
+      <!-- Phase 6: Documentation (Sep 27-28) -->
+      <text x="10" y="295" font-size="15" font-weight="bold">Final Documentation</text>
+      <rect x="880" y="280" width="50" height="30" fill="#34495e" rx="4" />
+      <text x="890" y="300" fill="#fff" font-size="12">Docs</text>
+      
+      <!-- Phase 7: Presentation (Sep 28) -->
+      <text x="10" y="335" font-size="15" font-weight="bold">Final Presentation</text>
+      <rect x="930" y="320" width="20" height="30" fill="#e74c3c" rx="4" />
+      <text x="935" y="340" fill="#fff" font-size="10">Final</text>
+      
+      <!-- Sprint labels -->
+      <text x="185" y="75" font-size="12" font-weight="bold" fill="#e74c3c">1st Sprint</text>
+      <text x="385" y="75" font-size="12" font-weight="bold" fill="#e74c3c">2nd Sprint</text>
+      <text x="685" y="75" font-size="12" font-weight="bold" fill="#e74c3c">3rd Sprint</text>
+      <text x="920" y="75" font-size="12" font-weight="bold" fill="#e74c3c">Final</text>
+    </svg>
+  </div>
+</body>
+</html>
