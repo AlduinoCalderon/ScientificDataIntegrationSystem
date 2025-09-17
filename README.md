@@ -1,23 +1,24 @@
 # Scientific Data Integration System
 
 ## Project Overview
-This repository contains a Java-based solution for automating the conversion of JSON files to CSV files for the Scientometrics Department at the university. The project aims to reduce information integration time while maintaining data quality, replacing a previously manual process.
+This repository contains a Java-based solution for automating the conversion of JSON files to CSV files for the Scientometrics Department. The project aims to reduce information integration time while maintaining data quality, replacing a previously manual process.
 
 ## Project Context
-Beatriz Solórzano, a Computer Systems Administration graduate working at a university, has been hired by the Scientometrics Department to automate their data integration process. The project involves developing a Java application to convert scientific production data from JSON format to CSV, streamlining the generation of bi-monthly scientific production reports.
+Beatriz Solórzano, a Computer Systems Administration graduate, has been hired by the Scientometrics Department to automate their data integration process. The project involves developing a Java application to convert scientific production data from JSON format to CSV, streamlining the generation of bi-monthly scientific production reports.
 
 ## Project Structure
 - `docs/` - Project documentation
   - `SCRUM_Concepts.md` - Documentation of SCRUM methodology
   - `File_Formats.md` - Documentation of JSON and CSV characteristics
   - `Backlog.md` - Product backlog with user stories
+  - `Roadmap.md` - Project roadmap and timeline
 - `src/` - Source code for the Java application
 - `data/` - Example data files for testing
 
 ## Technologies
 - Java
-- JSON Libraries (to be determined)
-- CSV Libraries (to be determined)
+- JSON Processing Libraries (Jackson/Gson)
+- CSV Libraries (Apache Commons CSV)
 - Git & GitHub for version control
 
 ## Development Phases
@@ -31,5 +32,10 @@ This project follows the SCRUM methodology and is divided into three sprints:
 2. **Sprint 2**: Development of core functionality for JSON to CSV conversion
 3. **Sprint 3**: Parameter configuration, complete integration, and JavaDoc documentation
 
-## Setup Instructions
-(To be added as the project develops)
+## Setup and Installation
+```bash
+# Clone the repository
+git clone https://github.com/your-username/scientific-data-integration.git
+
+# Navigate to the project directory
+cd scientific-data-integration
