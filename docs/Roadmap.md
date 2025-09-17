@@ -16,58 +16,31 @@ Develop a Java-based application to automate the conversion of scientific produc
 
 ## Timeline and Deliverables
 
-### Sprint 1: Documentation and Research (Weeks 1-2)
-- **Week 1:**
-  - Repository setup and initial documentation
-  - Research on JSON and CSV formats
-  - Documentation of SCRUM methodology
-  
-- **Week 2:**
-  - Product backlog creation
-  - Research on Java libraries for JSON and CSV processing
-  - Initial project structure setup
-  
-- **Deliverables:**
-  - Complete project documentation
-  - Research report on appropriate libraries
-  - Project backlog and roadmap
+### Project Schedule: September 16–28, 2025
 
-### Sprint 2: Core Development (Weeks 3-5)
-- **Week 3:**
-  - JSON file reading and parsing implementation
-  - Unit tests for JSON parsing
-  
-- **Week 4:**
-  - Data transformation framework development
-  - Mapping logic between JSON and CSV structures
-  
-- **Week 5:**
-  - CSV file generation implementation
-  - Unit tests for CSV output
-  
-- **Deliverables:**
-  - Working prototype with basic JSON to CSV conversion
-  - Unit test suite for core functionality
-  - Technical documentation of implemented features
+| Date         | Milestone/Deliverable                                              |
+|--------------|--------------------------------------------------------------------|
+| Sep 16       | Repository setup, initial documentation, SCRUM methodology         |
+| Sep 17       | Product backlog creation, research on file formats and libraries   |
+| Sep 18–19    | Project structure setup, finalize documentation                   |
+| Sep 20–21    | JSON file reading and parsing implementation, unit tests          |
+| Sep 22–23    | Data transformation framework, mapping logic                      |
+| Sep 24–25    | CSV file generation, unit tests                                   |
+| Sep 26       | Configuration system, batch processing                            |
+| Sep 27       | Performance optimization, error handling improvements             |
+| Sep 28       | Complete JavaDoc documentation, final testing, bug fixes, delivery|
 
-### Sprint 3: Enhancement and Completion (Weeks 6-8)
-- **Week 6:**
-  - Configuration system implementation
-  - Batch processing capabilities
-  
-- **Week 7:**
-  - Performance optimization
-  - Error handling improvements
-  
-- **Week 8:**
-  - Complete JavaDoc documentation
-  - Final testing and bug fixes
-  
-- **Deliverables:**
-  - Complete application with all features
-  - Comprehensive documentation including JavaDoc
-  - User guide and examples
-  - Final test reports
+**Deliverables:**
+- Complete project documentation
+- Research report on appropriate libraries
+- Project backlog and roadmap
+- Working prototype with basic JSON to CSV conversion
+- Unit test suite for core functionality
+- Technical documentation of implemented features
+- Complete application with all features
+- Comprehensive documentation including JavaDoc
+- User guide and examples
+- Final test reports
 
 ## Key Stakeholders and Roles
 - **Beatriz Solórzano:** Developer

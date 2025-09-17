@@ -101,14 +101,14 @@
 
 ## Requirements Tracking Table 2: Prioritized Requirements
 
-### Sprint Dates: September 16–28, 2025
+### Project Schedule: September 16–28, 2025
 
-| Requirements | Stage | Time Estimation | Deliverables |
-|--------------|-------|-----------------|--------------|
-| Repository creation and documentation | 1 | Sep 16–19 | GitHub repository with README, SCRUM_Concepts.md, File_Formats.md, Backlog.md, and Roadmap.md |
-| Java application capable of reading and parsing JSON files | 2 | Sep 20–23 | Java classes for JSON file reading and parsing with unit tests |
-| Framework for transforming JSON structures | 2 | Sep 24–25 | Transformation framework classes with unit tests |
-| CSV file generation functionality | 2 | Sep 26 | CSV generation classes with unit tests |
-| Configuration system | 3 | Sep 27 | Configuration classes and documentation |
-| Batch processing capabilities | 3 | Sep 27 | Batch processing implementation with progress reporting |
-| Comprehensive code documentation | 3 | Sep 28 | Complete JavaDoc documentation and architecture diagrams |
+| Requirements                                      | Date(s)      | Deliverables                                                        |
+|---------------------------------------------------|--------------|---------------------------------------------------------------------|
+| Repository creation and documentation             | Sep 16–19    | GitHub repository with README, SCRUM_Concepts.md, File_Formats.md, Backlog.md, and Roadmap.md |
+| Java application for reading/parsing JSON files   | Sep 20–21    | Java classes for JSON file reading and parsing with unit tests      |
+| Data transformation framework                     | Sep 22–23    | Transformation framework classes with unit tests                    |
+| CSV file generation functionality                 | Sep 24–25    | CSV generation classes with unit tests                              |
+| Configuration system                              | Sep 26       | Configuration classes and documentation                             |
+| Batch processing capabilities                     | Sep 27       | Batch processing implementation with progress reporting             |
+| Comprehensive code documentation                  | Sep 28       | Complete JavaDoc documentation and architecture diagrams            |
