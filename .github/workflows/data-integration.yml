@@ -1,0 +1,84 @@
+name: Scientific Data Integration
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+    inputs:
+      input_directory:
+        description: 'Input directory containing JSON files'
+        required: true
+        default: 'data/input'
+      output_directory:
+        description: 'Output directory for CSV files'
+        required: true
+        default: 'data/output'
+
+jobs:
+  build-and-convert:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        
+    - name: Cache Maven dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.m2
+        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+        restore-keys: ${{ runner.os }}-m2
+        
+    - name: Build application
+      run: mvn clean package -DskipTests
+      
+    - name: Create output directory
+      run: mkdir -p ${{ github.event.inputs.output_directory || 'data/output' }}
+      
+    - name: Convert JSON files to CSV
+      run: |
+        INPUT_DIR="${{ github.event.inputs.input_directory || 'data/input' }}"
+        OUTPUT_DIR="${{ github.event.inputs.output_directory || 'data/output' }}"
+        
+        echo "Converting JSON files from $INPUT_DIR to $OUTPUT_DIR"
+        
+        for json_file in "$INPUT_DIR"/*.json; do
+          if [ -f "$json_file" ]; then
+            filename=$(basename "$json_file" .json)
+            output_file="$OUTPUT_DIR/${filename}.csv"
+            
+            echo "Processing: $json_file -> $output_file"
+            java -jar target/dataintegration-1.0-SNAPSHOT.jar "$json_file" "$output_file"
+            
+            if [ $? -eq 0 ]; then
+              echo "✅ Successfully converted: $json_file"
+            else
+              echo "❌ Failed to convert: $json_file"
+              exit 1
+            fi
+          fi
+        done
+        
+    - name: Upload CSV artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: converted-csv-files
+        path: ${{ github.event.inputs.output_directory || 'data/output' }}/*.csv
+        
+    - name: Display conversion summary
+      run: |
+        OUTPUT_DIR="${{ github.event.inputs.output_directory || 'data/output' }}"
+        CSV_COUNT=$(find "$OUTPUT_DIR" -name "*.csv" | wc -l)
+        echo "🎉 Conversion completed successfully!"
+        echo "📊 Generated $CSV_COUNT CSV files"
+        echo ""
+        echo "Generated files:"
+        ls -la "$OUTPUT_DIR"/*.csv || echo "No CSV files found"
