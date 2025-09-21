@@ -68,7 +68,7 @@ jobs:
         done
         
     - name: Upload CSV artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: converted-csv-files
         path: ${{ github.event.inputs.output_directory || 'data/output' }}/*.csv
