@@ -1,0 +1,133 @@
+# Maven build artifacts
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Java compiled class files
+*.class
+
+# Log files
+*.log
+logs/
+conversion.log
+
+# JAR files (exclude the built artifacts but keep test data)
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Virtual machine crash logs
+hs_err_pid*
+replay_pid*
+
+# IDE files
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# IntelliJ IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Output data (but keep input test data)
+data/output/
+*.csv
+
+# Keep input test data but ignore any sensitive data
+!data/input/mini_cooper_cars.json
+!data/input/mini_brand_info.json
+data/input/sensitive/
+data/input/private/
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Environment variables and configuration
+.env
+.env.local
+.env.*.local
+config.properties
+secrets.properties
+
+# Test coverage reports
+jacoco.xml
+*.exec
+
+# Dependency directories
+node_modules/
+
+# Application specific
+application-*.properties
+!application.properties
+/data/
