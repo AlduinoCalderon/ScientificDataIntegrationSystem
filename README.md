@@ -36,8 +36,8 @@ This repository contains a **complete, production-ready** Java application that 
 - **GitHub Actions**: `.github/workflows/data-integration.yml` - Automated testing and deployment
 
 ### 📚 Documentation
-- **Implementation Summary**: `IMPLEMENTATION_SUMMARY.md` - Complete technical overview
-- **Usage Examples**: `USAGE_EXAMPLES.md` - Comprehensive usage guide
+- **Implementation Summary**: `docs/IMPLEMENTATION_SUMMARY.md` - Complete technical overview
+- **Usage Examples**: `docs/USAGE_EXAMPLES.md` - Comprehensive usage guide
 - **Project Documentation**: `docs/` - SCRUM methodology, file formats, roadmap
 
 ## 🚀 Quick Start Guide
@@ -78,43 +78,19 @@ python scripts/automate.py data/input data/output --validate
 scripts\batch-convert.bat "data\input" "data\output"
 ```
 
-## 👥 For Digital NAO Team Review
-
-### 🔍 Code Review Steps
-1. **Clone the repository** using the command above
-2. **Build the project** with `mvn clean package -DskipTests`
-3. **Review source code** in `src/main/java/com/scientific/dataintegration/`
-4. **Check JavaDoc documentation** - all classes and methods are fully documented
-5. **Test functionality** using provided sample data in `data/input/`
-6. **Review test results** in generated `data/output/` directory
-
 ### 🧪 Testing the Application
 ```bash
-# Test with provided Mini Cooper sample data
-java -jar target/dataintegration-1.0-SNAPSHOT.jar data/input/mini_cooper_cars.json data/output/test_output.csv
+# Test with your own JSON data
+java -jar target/dataintegration-1.0-SNAPSHOT.jar data/input/your_data.json data/output/test_output.csv
 
 # Verify output file was created successfully
 ls -la data/output/
 ```
 
-### 📊 Verification Checklist
-- ✅ **JSON File Handling**: Opens files, parses to data structures, handles exceptions
-- ✅ **CSV File Writing**: Creates files, configures delimiters, handles write errors
-- ✅ **JavaDoc Documentation**: All classes and methods documented with purpose, parameters, returns
-- ✅ **Error Handling**: Comprehensive exception handling throughout
-- ✅ **Testing**: Isolated function testing and integration testing completed
-
-### 🔐 Access Permissions
-This repository is configured with appropriate access permissions for the **Digital NAO team**:
-- **Public Repository**: Full read access for review and evaluation
-- **Issue Tracking**: Enabled for feedback and suggestions
-- **Actions/CI**: Full visibility into automated testing results
-- **Releases**: Access to stable versions and release notes
-
 ### 📈 Quality Metrics
 - **Code Coverage**: Comprehensive error handling and validation
 - **Documentation**: 100% JavaDoc coverage on public methods
-- **Testing**: Successfully tested with real scientific data samples
+- **Testing**: Successfully tested with various JSON data structures
 - **Performance**: Efficient processing of moderate to large JSON datasets
 - **Maintainability**: Clean, modular architecture following SOLID principles
 
@@ -156,8 +132,8 @@ ScientificDataIntegrationSystem/
 For questions, issues, or feedback regarding this implementation:
 
 - **Repository Issues**: [GitHub Issues](https://github.com/AlduinoCalderon/ScientificDataIntegrationSystem/issues)
-- **Technical Documentation**: See `IMPLEMENTATION_SUMMARY.md` for detailed technical information
-- **Usage Examples**: See `USAGE_EXAMPLES.md` for comprehensive usage scenarios
+- **Technical Documentation**: See `docs/IMPLEMENTATION_SUMMARY.md` for detailed technical information
+- **Usage Examples**: See `docs/USAGE_EXAMPLES.md` for comprehensive usage scenarios
 
 ## 📜 License & Attribution
 
@@ -169,4 +145,4 @@ For questions, issues, or feedback regarding this implementation:
 
 ---
 
-**Ready for production deployment and Digital NAO team review!** 🚀
+**Ready for production deployment!** 🚀
